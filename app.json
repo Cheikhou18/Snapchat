@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "snapchat",
+    "slug": "snapchat",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/images/snap-removebg-preview.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bafode.snapchat",
+      "infoPlist": {
+        "NSCameraUsageDescription": "We need your permission to use your camera",
+        "NSMicrophoneUsageDescription": "We need your permission to use your microphone"
+      }
+    },
+    "android": {
+      "permissions": [
+        "CAMERA",
+        "RECORD_AUDIO",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_EXTERNAL_STORAGE"
+      ],
+      "package": "com.bafode.snapchat"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      ["expo-router"]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "3062fa8e-df51-4e14-a417-f1a734fe4f06"
+      }
+    }
+  }
+}
